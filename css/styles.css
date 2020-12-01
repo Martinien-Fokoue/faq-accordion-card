@@ -1,0 +1,204 @@
+body, .container .faq .links .faq-links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Kumbh Sans;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6565e7), to(#af67e9));
+  background: linear-gradient(to top, #6565e7, #af67e9);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 120vh;
+  }
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: .1fr 2fr;
+        grid-template-rows: .1fr 2fr;
+  }
+}
+
+.container img.box {
+  position: absolute;
+  left: 40px;
+  top: 42%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .container img.box {
+    top: 70px;
+    left: 15%;
+    width: 80px;
+  }
+}
+
+.container .image-left {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .container .image-left {
+    position: inherit;
+  }
+}
+
+.container .image-left img {
+  position: absolute;
+  z-index: 0;
+}
+
+.container .image-left img.woman-illus {
+  left: -80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 450px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .container .image-left img.woman-illus {
+    top: 12px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
+  }
+}
+
+.container .image-left img.shadow {
+  top: -270px;
+  left: -550px;
+  width: 900px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .container .image-left img.shadow {
+    top: -6px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
+  }
+}
+
+.container .faq {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 30px;
+  padding: 70px 100px;
+  z-index: 20;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+  .container .faq {
+    padding: 100px 20px 50px;
+  }
+}
+
+.container .faq .faq-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .container .faq .faq-title {
+    text-align: center;
+  }
+}
+
+.container .faq .links {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.container .faq .links .faq-links {
+  border-bottom: 1px solid #787887;
+  padding-bottom: 15px;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.container .faq .links .faq-links .link {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .faq .links .faq-links .link a {
+  text-decoration: none;
+  color: #4a4b5e;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .container .faq .links .faq-links .link a {
+    font-size: 13px;
+  }
+}
+
+.container .faq .links .faq-links .link a:hover {
+  color: #f47c57;
+}
+
+.container .faq .links .faq-links .link a.active {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+.container .faq .links .faq-links .link .arrow.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .faq .links .faq-links .description {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+.container .faq .links .faq-links .description.active {
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
